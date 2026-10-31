@@ -12,67 +12,72 @@
 .wrap{width:min(960px,calc(100% - 30px));margin:32px auto;border:1px solid var(--line);background:rgba(8,15,10,.94);box-shadow:0 20px 70px #0008;border-radius:18px;overflow:hidden}
 .top{height:58px;background:#1a251d;border-bottom:1px solid var(--line);display:flex;align-items:center;padding:0 20px;gap:9px;color:#66866a}
 .dot{width:12px;height:12px;border-radius:50%}.red{background:#ff5c57}.amber{background:#ffbd2e}.green{background:#28c840}.top span:last-child{margin:auto;font-weight:700;letter-spacing:1px}
-main{padding:clamp(24px,6vw,58px)}
-.brand{font-size:clamp(25px,5vw,48px);font-weight:900;color:var(--green);line-height:1.15;overflow-wrap:anywhere}
-.tag{color:var(--cyan);font-size:clamp(14px,2.5vw,20px);margin-top:12px}
-hr{border:0;border-top:1px dashed var(--line);margin:34px 0}
-.prompt{color:var(--green);font-size:20px;font-weight:800}
-.intro{font-size:clamp(16px,2.5vw,21px);margin:22px 0 28px;max-width:760px}
-.meta{display:grid;grid-template-columns:minmax(105px, .7fr) 1.3fr;gap:12px 20px;margin:26px 0 34px}
-.meta .key{color:var(--cyan)}.meta .val{font-weight:700}
-.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px;margin:24px 0}
-.card{border:1px solid #294832;background:#101b14;border-radius:15px;padding:20px}
+main{padding:clamp(24px,6vw,58px)}.brand{font-size:clamp(25px,5vw,48px);font-weight:900;color:var(--green);line-height:1.15;overflow-wrap:anywhere}
+.tag{color:var(--cyan);font-size:clamp(14px,2.5vw,20px);margin-top:12px}hr{border:0;border-top:1px dashed var(--line);margin:34px 0}
+.prompt{color:var(--green);font-size:20px;font-weight:800}.intro{font-size:clamp(16px,2.5vw,21px);margin:22px 0 28px;max-width:760px}
+.meta{display:grid;grid-template-columns:minmax(105px,.7fr) 1.3fr;gap:12px 20px;margin:26px 0 34px}.meta .key{color:var(--cyan)}.meta .val{font-weight:700}
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px;margin:24px 0}.card{border:1px solid #294832;background:#101b14;border-radius:15px;padding:20px}
 .card h3{color:var(--green);margin:0 0 8px;font-size:18px}.card p{margin:0;color:#b8d1b5}
 details{border:1px solid #3b4940;border-left:5px solid var(--green);border-radius:18px;margin:18px 0;background:#111b14;overflow:hidden}
 details:nth-of-type(2){border-left-color:var(--yellow)}details:nth-of-type(3){border-left-color:#ff4d86}
 summary{cursor:pointer;padding:18px 22px;font-size:19px;font-weight:800;list-style:none;display:flex;justify-content:space-between;gap:12px}
 summary::-webkit-details-marker{display:none}summary:after{content:"▾";color:#8ba08b}details[open] summary:after{content:"▴"}
-.detail-body{padding:0 22px 20px;color:#c4d9c1}
-.tags{display:flex;flex-wrap:wrap;gap:9px}.pill{border:1px solid #31583a;border-radius:99px;padding:6px 11px;color:#c9edc1;background:#142219;font-size:13px}
+.detail-body{padding:0 22px 20px;color:#c4d9c1}.tags{display:flex;flex-wrap:wrap;gap:9px}.pill{border:1px solid #31583a;border-radius:99px;padding:6px 11px;color:#c9edc1;background:#142219;font-size:13px}
 .project{padding:12px 0;border-bottom:1px dashed #294331}.project:last-child{border:0}
 .contact{border:1px solid #38553d;border-radius:16px;padding:22px;margin-top:30px;background:#101b14}
-a{color:var(--cyan);text-decoration:none}a:hover{text-decoration:underline}
-.btn{display:inline-block;background:var(--green);color:#08110c;font-weight:900;padding:11px 16px;border-radius:9px;margin:8px 8px 0 0}
+a{color:var(--cyan);text-decoration:none}a:hover{text-decoration:underline}.btn{display:inline-block;background:var(--green);color:#08110c;font-weight:900;padding:11px 16px;border-radius:9px;margin:8px 8px 0 0}
 footer{text-align:center;color:var(--muted);font-size:12px;padding:22px;border-top:1px solid var(--line)}
 @media(max-width:600px){.wrap{margin:12px auto;width:calc(100% - 18px)}main{padding:24px 18px}.cards{grid-template-columns:1fr}.meta{grid-template-columns:1fr;gap:3px}.meta .val{margin-bottom:10px}.top{height:48px}}
 </style>
 </head>
 <body>
 <div class="wrap">
-  <div class="top"><i class="dot red"></i><i class="dot amber"></i><i class="dot green"></i><span>rufai-net-services — terminal</span></div>
-  <main>
-    <div class="brand">./RUFAI NET SERVICES<span style="color:var(--mint)">:~#</span></div>
-    <div class="tag">Technology • Security • Connectivity • Power Solutions</div>
-    <hr>
-    <div class="prompt">➜ whoami</div>
-    <p class="intro"><strong>RUFAI NET SERVICES</strong> provides practical technology solutions that help homes and businesses stay connected, secure and powered. We focus on dependable installations, professional service and customer support.</p>
-    <div class="meta">
-      <div class="key">[Business]</div><div class="val">Technology & Infrastructure Solutions</div>
-      <div class="key">[Services]</div><div class="val">Networking, CCTV, Solar, Starlink & Lithium Battery Systems</div>
-      <div class="key">[Mission]</div><div class="val">Reliable connections. Safer spaces. Smarter power.</div>
-    </div>
-    <div class="prompt">➜ services --list</div>
-    <div class="cards">
-      <article class="card"><h3>01 / Networking</h3><p>Network setup, Wi-Fi coverage, access points, structured cabling and connectivity support.</p></article>
-      <article class="card"><h3>02 / CCTV Installation</h3><p>Security camera installation, configuration and monitoring solutions for homes and businesses.</p></article>
-      <article class="card"><h3>03 / Solar Installation</h3><p>Solar power system planning, installation and backup-power solutions.</p></article>
-      <article class="card"><h3>04 / Starlink</h3><p>Starlink setup, installation and network configuration for reliable internet access.</p></article>
-      <article class="card"><h3>05 / Lithium Batteries</h3><p>Battery backup solutions to support dependable energy storage.</p></article>
-    </div>
-    <div class="prompt">➜ profile --details</div>
-    <details open><summary>Core Capabilities</summary><div class="detail-body"><div class="tags"><span class="pill">Network deployment</span><span class="pill">Wi-Fi optimization</span><span class="pill">CCTV setup</span><span class="pill">Solar systems</span><span class="pill">Starlink configuration</span><span class="pill">Battery backup</span><span class="pill">Technical support</span></div></div></details>
-    <details><summary>Why Choose Us?</summary><div class="detail-body"><ul><li>Solutions tailored to your site and requirements.</li><li>Clear communication from planning to installation.</li><li>Support for residential and business projects.</li><li>Focus on neat installations and dependable performance.</li></ul></div></details>
-    <details><summary>Projects & Experience</summary><div class="detail-body"><div class="project"><strong>Networking & Wi-Fi</strong><br>Network extension, access point deployment and connectivity troubleshooting.</div><div class="project"><strong>Security Systems</strong><br>CCTV installation and configuration for improved site security.</div><div class="project"><strong>Power Solutions</strong><br>Solar and lithium battery backup installations.</div><p><em>Add your own project photos and completed installation details here.</em></p></div></details>
-    <div class="contact">
-      <div class="prompt">➜ contact --connect</div>
-      <p>Have a project or need a quote? Get in touch with RUFAI NET SERVICES.</p>
-      <p><strong>Phone / WhatsApp:</strong> <span style="color:var(--muted)">Add your business number</span><br><strong>Email:</strong> <span style="color:var(--muted)">Add your business email</span><br><strong>Service area:</strong> Nigeria</p>
-      <a class="btn" href="https://wa.me/" target="_blank" rel="noopener">WhatsApp Us</a>
-      <a class="btn" href="mailto:">Send Email</a>
-    </div>
-  </main>
-  <footer>© <span id="year"></span> RUFAI NET SERVICES • Built for reliable technology solutions</footer>
+<div class="top"><i class="dot red"></i><i class="dot amber"></i><i class="dot green"></i><span>rufai-net-services — terminal</span></div>
+<main>
+<div class="brand">./RUFAI NET SERVICES<span style="color:var(--mint)">:~#</span></div>
+<div class="tag">Technology • Security • Connectivity • Power Solutions</div><hr>
+<div class="prompt">➜ whoami</div>
+<p class="intro"><strong>RUFAI NET SERVICES</strong> provides practical technology solutions that help homes and businesses stay connected, secure and powered. We focus on dependable installations, professional service and customer support.</p>
+<div class="meta">
+<div class="key">[Business]</div><div class="val">Technology & Infrastructure Solutions</div>
+<div class="key">[Services]</div><div class="val">Networking, CCTV, Solar, Starlink & Lithium Battery Systems</div>
+<div class="key">[Mission]</div><div class="val">Reliable connections. Safer spaces. Smarter power.</div>
+</div>
+<div class="prompt">➜ services --list</div>
+<div class="cards">
+<article class="card"><h3>01 / Networking</h3><p>Network setup, Wi-Fi coverage, access points, structured cabling and connectivity support.</p></article>
+<article class="card"><h3>02 / CCTV Installation</h3><p>Security camera installation, configuration and monitoring solutions for homes and businesses.</p></article>
+<article class="card"><h3>03 / Solar Installation</h3><p>Solar power system planning, installation and backup-power solutions.</p></article>
+<article class="card"><h3>04 / Starlink</h3><p>Starlink setup, installation and network configuration for reliable internet access.</p></article>
+<article class="card"><h3>05 / Lithium Batteries</h3><p>Battery backup solutions to support dependable energy storage.</p></article>
+</div>
+<div class="prompt">➜ profile --details</div>
+<details open><summary>Core Capabilities</summary><div class="detail-body"><div class="tags"><span class="pill">Network deployment</span><span class="pill">Wi-Fi optimization</span><span class="pill">CCTV setup</span><span class="pill">Solar systems</span><span class="pill">Starlink configuration</span><span class="pill">Battery backup</span><span class="pill">Technical support</span></div></div></details>
+<details><summary>Certifications & Professional Training</summary><div class="detail-body">
+<div class="project"><strong>DHCA – VIS</strong></div>
+<div class="project"><strong>CGAA – CCTV</strong></div>
+<div class="project"><strong>CGSP – CCTV</strong></div>
+<div class="project"><strong>Energy Transition: Drivers, Impacts and Opportunities</strong><br>Solar System</div>
+<p><em>Certification titles are displayed as provided. Issuing organizations and dates can be added later.</em></p>
+</div></details>
+<details><summary>Why Choose Us?</summary><div class="detail-body"><ul><li>Solutions tailored to your site and requirements.</li><li>Clear communication from planning to installation.</li><li>Support for residential and business projects.</li><li>Focus on neat installations and dependable performance.</li></ul></div></details>
+<details><summary>Projects & Experience</summary><div class="detail-body">
+<div class="project"><strong>Networking & Wi-Fi</strong><br>Network extension, access point deployment and connectivity troubleshooting.</div>
+<div class="project"><strong>Security Systems</strong><br>CCTV installation and configuration for improved site security.</div>
+<div class="project"><strong>Power Solutions</strong><br>Solar and lithium battery backup installations.</div>
+<p><em>Add your own project photos and completed installation details here.</em></p>
+</div></details>
+<div class="contact">
+<div class="prompt">➜ contact --connect</div>
+<p>Have a project or need a quote? Get in touch with RUFAI NET SERVICES.</p>
+<p><strong>Phone / WhatsApp:</strong> <a href="tel:+2349072558758">+234 907 255 8758</a><br>
+<strong>Email:</strong> <a href="mailto:adeshina297@gmail.com">adeshina297@gmail.com</a><br>
+<strong>Business location:</strong> Okun Ajah, Mopo, Lagos State, Nigeria</p>
+<a class="btn" href="https://wa.me/2349072558758" target="_blank" rel="noopener">WhatsApp Us</a>
+<a class="btn" href="mailto:adeshina297@gmail.com">Send Email</a>
+</div>
+</main>
+<footer>© <span id="year"></span> RUFAI NET SERVICES • Built for reliable technology solutions</footer>
 </div>
 <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
-</body>
-</html>
+</body></html>
